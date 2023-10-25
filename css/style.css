@@ -119,6 +119,22 @@ main{
     color: #fff;
 }
 
+.offcanvas-size-xl {
+    --bs-offcanvas-width: 50% !important;
+}
+
+.fa-plus-mc-block{
+    display: none;
+}
+
+.mc-circle-badge{
+    border-radius: 50%;
+    background-color: #165bba;
+    font-size: 13px;
+}
+
+
+
 
 
 /* /main */
@@ -148,6 +164,17 @@ main{
         
     }
 
+    .offcanvas-size-xl {
+        --bs-offcanvas-width: 100% !important;
+    }
+
+    .fa-plus-mc-block{
+        display: inline-block;
+    }
+
+    
+
+    
 
 
 
