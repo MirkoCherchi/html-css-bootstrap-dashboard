@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: blueviolet;
+}
+
+/* header */
+.mc-container-header{
+    background-color: #f8f9fa;
+    height: 70px;
+}
+
+.mc-logo-mobile{
+    width: 50px;
+}
+
+.fa-bell{
+    color: #ff8f00;
+}
+
+.fa-list,
+.fa-circle-question,
+.fa-ellipsis-vertical{
+    color: #5b5858;
+}
+
+
+
+/* /header */
