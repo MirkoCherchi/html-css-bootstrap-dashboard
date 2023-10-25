@@ -1,12 +1,25 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: blueviolet;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
 }
 
 /* header */
 .mc-container-header{
     background-color: #f8f9fa;
     height: 70px;
+    width: 100%;
 }
 
 .mc-logo-mobile{
@@ -24,5 +37,120 @@ body{
 }
 
 
-
 /* /header */
+
+/* main */
+
+main{
+    height: 100%;
+}
+
+.nav-bar-mc{
+    background-color: #11283d;
+    width: 150px;
+    color: #fff;
+    padding-top: 30px;
+    background-image: url(../img/sidebar-bg.png);
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.list-bottom{
+    margin-top: auto;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+
+.list-bottom i{
+    padding-right: 15px;
+    color: #fff;
+}
+
+.list-mc a{
+    color: #fff;
+}
+
+.list-mc a i{
+    padding-right: 15px;
+}
+
+.list-mc{
+    font-size: 14px;
+}
+
+.mc-cont-main{
+    background-color: red;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 4.375rem;
+    padding-left: 150px;
+    width: 100%;
+}
+
+.mc-cont-top-main{
+    background-color: #1b72e8;
+    color: white;
+}
+
+.mc-boolean-tit{
+    font-size: 2.1875rem;
+}
+
+.mc-color-badge{
+    background-color: #165bba;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.mc-right-arrow{
+    font-size: 1.25rem;    vertical-align: baseline;
+}
+
+.mc-number-big{
+    font-size: 40px;
+}
+
+.fa-square-plus{
+    font-size: 60px;
+    color: #fff;
+}
+
+
+
+/* /main */
+
+
+
+
+@media screen and (max-width: 991px) {
+
+
+    .nav-bar-mc{
+        width: 70px;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .list-mc a i{
+        padding-right: 0;
+    }
+
+    .list-bottom i{
+        padding-right: 0;
+    }
+
+    .mc-cont-main{
+        padding-left: 70px;
+        
+    }
+
+
+
+
+    
+    
+}

@@ -31,12 +31,12 @@
         <!-- navbar header -->
         <div class="container-fluid mc-container-header position-fixed z-3">
             <div class="row mc-container-header container-fluid align-items-center">
-                <div class="col-lg-2 col-md-1 col-sm-1 col-2"><img class="d-none d-lg-block" src="img/logo.svg"
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2"><img class="d-none d-lg-block" src="img/logo.svg"
                         alt="logo">
                     <img class="mc-logo-mobile d-lg-none d-xl-none d-xxl-none d-md-block d-sm-block"
                         src="img/mobile-logo.png" alt="logo mobile">
                 </div>
-                <div class="col-lg-8 col-md-10 col-sm-10 col-8">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8">
                     <nav class="navbar">
                         <form class="container-fluid">
                             <div class="input-group">
@@ -48,7 +48,7 @@
                         </form>
                     </nav>
                 </div>
-                <div class="col-lg-2 col-md-1 col-sm-1 col-2 d-flex justify-content-end gap-4"><a class="nav-link"
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2 d-flex justify-content-end gap-4"><a class="nav-link"
                         aria-current="page" href="#"><i class="fa-solid fa-list d-none d-lg-block"></i></a><a
                         class="nav-link" href="#"><i class="fa-solid fa-circle-question d-none d-lg-block"></i></a>
                     <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></a>
@@ -67,6 +67,81 @@
         <!-- /navbar header -->
     </header>
     <!-- /header -->
+
+    <!-- main -->
+
+    <main>
+        <!-- main nav -->
+        <div class="position-relative">
+            <div class="nav-bar-mc d-flex justify-content-center align-items-center">
+                <div class="list-mc d-flex flex-column gap-4">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i><span class="pe-3 d-none d-lg-inline-block">Home</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i><span
+                            class="ps-1 custom-p pe-3 d-none d-lg-inline-block">Stats</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-signal"></i><span class="pe-3 d-none d-lg-inline-block">Signals</span>
+                    </a>
+                </div>
+
+                <div class="list-bottom"><a href="#"><i class="fa-solid fa-gear"></i></a><span
+                        class="pe-3 d-none d-lg-inline-block">Admin</span></div>
+            </div>
+        </div>
+        <!-- /main nav -->
+
+        <!-- main form -->
+        <div class="container-fluid mc-cont-main">
+            <div class="row mc-cont-top-main">
+                <div class="col-6 p-4">
+
+                    <div class="d-flex flex-column">
+                        <div class="top-mc-left">
+                            <span class="mc-boolean-tit">Boolean</span>
+                            <span class="badge ms-1 mc-color-badge">Piano blaze</span>
+                        </div>
+                        <div class="bottom-left-mc">
+                            <span class="badge ms-1 mc-color-badge">3 app</span>
+                            <span class="mc-right-arrow">&#187;</span>
+                            <span class="badge ms-1 mc-color-badge">Boolean mobile app</span>
+                            <span class="badge ms-1 mc-color-badge">Boolean web app</span>
+                            <span class="badge ms-1 mc-color-badge">Boolean blog app</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 pt-4"><span>Studenti online negli ultimi 30 minuti</span><br>
+                    <span class="mc-number-big">125</span>
+                </div>
+                <div class="col-3"><span>Nuovo Studente</span><button class="btn" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                I will not close if you click outside of me.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /main form -->
+
+
+    </main>
+
+    <!-- /main -->
 
 
 
