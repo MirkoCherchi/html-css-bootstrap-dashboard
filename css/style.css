@@ -115,9 +115,12 @@ main{
     font-size: 40px;
 }
 
-.fa-square-plus{
-    font-size: 60px;
+.fa-plus{
+    font-size: 20px;
     color: #fff;
+    border: 1px solid #fff;
+    padding: 14px 16px;
+    border-radius: 5px;
 }
 
 .offcanvas-size-xl {
@@ -183,6 +186,11 @@ main{
     background-color: rgba(206, 208, 228, 0.5);
     cursor: pointer;
     padding: 10px;
+}
+
+.fa-plus:hover{
+    background-color: #fff;
+    color: #1b72e8;
 }
 
 
