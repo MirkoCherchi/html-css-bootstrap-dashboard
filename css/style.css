@@ -50,9 +50,10 @@ main{
     background-color: #11283d;
     width: 150px;
     color: #fff;
-    padding-top: 30px;
+    padding-top: 20px;
     background-image: url(../img/sidebar-bg.png);
     flex-direction: column;
+    background-size: cover;
     position: fixed;
     left: 0;
     top: 70px;
@@ -63,7 +64,7 @@ main{
 .list-bottom{
     margin-top: auto;
     padding-bottom: 30px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .list-bottom i{
@@ -80,7 +81,7 @@ main{
 }
 
 .list-mc{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .mc-cont-main{
@@ -148,6 +149,18 @@ main{
 .fa-pen{
     margin-right: 5px;
 }
+
+.mc-modal{
+    --bs-modal-width: 100%;
+}
+
+.mc-w-class{
+    width: 60%;
+}
+
+
+
+
 
 
 
