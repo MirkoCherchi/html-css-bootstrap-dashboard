@@ -32,12 +32,11 @@
         <!-- navbar header -->
         <div class="container-fluid mc-container-header position-fixed z-3">
             <div class="row mc-container-header container-fluid align-items-center">
-                <div class="col-lg-1 col-md-1 col-sm-1 col-2"><img class="d-none d-lg-block" src="img/logo.svg"
-                        alt="logo">
+                <div class="col-auto"><img class="d-none d-lg-block" src="img/logo.svg" alt="logo">
                     <img class="mc-logo-mobile d-lg-none d-xl-none d-xxl-none d-md-block d-sm-block"
                         src="img/mobile-logo.png" alt="logo mobile">
                 </div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-8">
+                <div class="col">
                     <nav class="navbar">
                         <form class="container-fluid">
                             <div class="input-group">
@@ -49,9 +48,9 @@
                         </form>
                     </nav>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-2 d-flex justify-content-end gap-4"><a class="nav-link"
-                        aria-current="page" href="#"><i class="fa-solid fa-list d-none d-lg-block"></i></a><a
-                        class="nav-link" href="#"><i class="fa-solid fa-circle-question d-none d-lg-block"></i></a>
+                <div class="col-auto d-flex justify-content-end gap-4"><a class="nav-link" aria-current="page"
+                        href="#"><i class="fa-solid fa-list d-none d-lg-block"></i></a><a class="nav-link" href="#"><i
+                            class="fa-solid fa-circle-question d-none d-lg-block"></i></a>
                     <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></a>
                     <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button"><i
                             class="fa-solid fa-bell"></i></a>
@@ -90,6 +89,7 @@
 
                 <div class="list-bottom"><a href="#"><i class="fa-solid fa-gear"></i></a><span
                         class="pe-3 d-none d-lg-inline-block">Admin</span></div>
+
             </div>
         </div>
         <!-- /main nav -->
@@ -125,15 +125,15 @@
                         minuti</span><br>
                     <span class="mc-number-big">125</span>
                 </div>
-                <div class="col-md-4 col-sm-12 ps-sm-4 order-md-3 order-sm-1 order-1 ps-4 ps-5 text-md-center">
+                <div class="pt-2 col-md-4 col-sm-12 ps-sm-4 order-md-3 order-sm-1 order-1 ps-4 text-md-center">
                     <span>Nuovo
                         Studente</span><button class="btn ps-3" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                         <i class="fa-regular fa-square-plus"></i>
                     </button>
 
-                    <div class="offcanvas offcanvas-end offcanvas-size-xl" data-bs-backdrop="true" tabindex="-1"
-                        id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas offcanvas-end offcanvas-size-xl text-start" data-bs-backdrop="true"
+                        tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
@@ -200,6 +200,153 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="bottom-main-mc">
+                <div class="row">
+                    <div class="col-8 mc-col-left">
+                        <div class="modal d-block position-relative pt-3 ps-2">
+                            <div class="modal-dialog m-0 mc-modal modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-bold">Prossime classi</h5>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="fw-normal" style="width: 60%;" scope="col">Nome
+                                                    </th>
+                                                    <th class="fw-normal text-center" scope="col">Data inizio
+                                                    </th>
+                                                    <th class="fw-normal text-center" scope="col">ROI</th>
+                                                    <th class="fw-normal text-center" scope="col">Stato</th>
+                                                    <th class="fw-normal text-center" scope="col">Azioni</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe75</th>
+                                                    <td class="text-center">15 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe76</th>
+                                                    <td class="text-center">16 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe77</th>
+                                                    <td class="text-center">17 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-warning">Process</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe78</th>
+                                                    <td class="text-center">18 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe79</th>
+                                                    <td class="text-center">19 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-danger">Failed</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe80</th>
+                                                    <td class="text-center">20 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe81</th>
+                                                    <td class="text-center">21 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-danger">Failed</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="d-flex align-items-center fw-normal" scope="row"><img
+                                                            class="mc-img-avatar me-2" src="img/class-avatar.png"
+                                                            alt="avatar">Classe82</th>
+                                                    <td class="text-center">22 Feb 2021</td>
+                                                    <td class="text-center">20%</td>
+                                                    <td class="text-center"><span
+                                                            class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+                                                    <td class="text-center"><i
+                                                            class="fa-solid fa-pen mc-icon-azioni"></i><i
+                                                            class="fa-solid fa-trash mc-icon-azioni"></i>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mc-col-right">2</div>
                 </div>
             </div>
         </div>

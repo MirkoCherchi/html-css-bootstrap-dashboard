@@ -13,6 +13,7 @@ ul{
 
 img{
     display: block;
+    width: 100%;
 }
 
 /* header */
@@ -83,7 +84,6 @@ main{
 }
 
 .mc-cont-main{
-    background-color: red;
     height: 100vh;
     overflow-y: auto;
     padding-top: 4.375rem;
@@ -133,7 +133,21 @@ main{
     font-size: 13px;
 }
 
+.mc-img-avatar{
+    width: 30px;
+}
 
+.mc-icon-azioni{
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.fa-pen{
+    margin-right: 5px;
+}
 
 
 
