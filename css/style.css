@@ -17,6 +17,7 @@ img{
 }
 
 /* header */
+
 .mc-container-header{
     background-color: #f8f9fa;
     height: 70px;
@@ -36,7 +37,6 @@ img{
 .fa-ellipsis-vertical{
     color: #5b5858;
 }
-
 
 /* /header */
 
@@ -168,16 +168,22 @@ main{
 .mc-line-dec{
     text-decoration: underline;
     color: #0d6efd;
+    cursor: pointer;
 }
-
-
-
-
-
 
 /* /main */
 
+/* hover */
+.mc-hover-tab:hover{
+    background-color: rgba(207, 203, 203, 0.5);
+    cursor: pointer;
+}
 
+.mc-hover-list:hover{
+    background-color: rgba(206, 208, 228, 0.5);
+    cursor: pointer;
+    padding: 10px;
+}
 
 
 @media screen and (max-width: 991px) {
