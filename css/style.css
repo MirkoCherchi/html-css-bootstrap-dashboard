@@ -143,7 +143,6 @@ main{
     border: 1px solid #6c757d;
     padding: 5px;
     border-radius: 5px;
-
 }
 
 .fa-pen{
@@ -154,10 +153,22 @@ main{
     --bs-modal-width: 100%;
 }
 
-.mc-w-class{
-    width: 60%;
+.modal{
+    height: auto;
 }
 
+.mc-font-tabs{
+    font-size: 14px;
+}
+
+.mc-w-tab{
+    width: 70%;
+}
+
+.mc-line-dec{
+    text-decoration: underline;
+    color: #0d6efd;
+}
 
 
 
@@ -199,12 +210,11 @@ main{
         display: inline-block;
     }
 
-    
 
-    
+}
 
-
-
-    
-    
+@media screen and (max-width: 768px) {
+    .mc-d-n{
+        display: none;
+    }
 }
